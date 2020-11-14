@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/txvUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:labelFor="@id/edtUser"
+        android:text="@string/txtUser"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle=""
+        app:layout_constraintStart_toStartOf="@+id/startgl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txvUser"
+        android:layout_toEndOf="@+id/txvUser"
+        android:autofillHints=""
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvUser"
+        app:layout_constraintEnd_toStartOf="@+id/endgl"
+        app:layout_constraintStart_toStartOf="@id/barrier"
+        tools:text="User Name" />
+
+
+    <TextView
+        android:id="@+id/txvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:labelFor="@id/edtPassword"
+        android:text="@string/txtPassword"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="@+id/startgl"
+        app:layout_constraintTop_toBottomOf="@+id/txvUser" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvPassword"
+        app:layout_constraintEnd_toStartOf="@+id/endgl"
+        app:layout_constraintStart_toStartOf="@id/barrier" />
+
+
+    <CheckBox
+        android:id="@+id/chbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:layout_marginTop="60dp"
+        android:text="@string/chkRemember"
+        app:layout_constraintEnd_toStartOf="@+id/endgl"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/btLogin"
+        app:layout_constraintEnd_toStartOf="@+id/btSignUp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chbRemember" />
+
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btSignUp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btLogin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/startgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="389dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="txvUser,txvPassword" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/endgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+
+</android.support.constraint.ConstraintLayout>

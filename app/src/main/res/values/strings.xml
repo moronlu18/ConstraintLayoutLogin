@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ContraintLayout Barrier</string>
+    <string name="txtUser">Nombre de usuario: </string>
+    <string name="txtPassword">Constraseña: </string>
+    <string name="chkRemember">Remember me</string>
+    <string name="btLogin">Login</string>
+    <string name="btSignUp">SignUp</string>
+    <string name="switch1">Activar notificaciones</string>
+    <string name="notificationOff">Notificaciones desactivadas</string>
+    <string name="notificationOn">Notificaciones activadas</string>
+    <string name="swNotification">Activar Notificaciones</string>
+</resources>
