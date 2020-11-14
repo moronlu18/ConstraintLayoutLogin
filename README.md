@@ -14,12 +14,19 @@ restricciones:
 ## Barreras
 Las barreras son útiles cuando colocamos una vista a la derecha de otras vistas que están a la izquierda y  
 que tienen diferentes tamaños. En el gif animado hay tres vistas de texto que se establecen dinámicamente
-o mostramos contenido generado por el usuario cuyo tamaño no podemos predecir.
+o que muestran contenido generado por el usuario cuyo tamaño no se puede predecir.
 
 <br />
 
 ![Barreras](/img/barrier.gif)
 
+En el ejemplo Login, los campos `EditText` se tienen que ajustar cuando se cambia el idioma.  
+Las cadenas de texto o `TextView`cambian de tamaño ya que en inglés se muestra "**user**"  
+y en español "**nombre de usuario**" de forma que los `EditText` de la derecha se  
+tiene que ajustar según la cadena de texto que se muestre.
+
+![Login en inglés](/img/login_en.png)
+![Login en español](/img/login_es.png)
 ## Cadenas
 Cuando se crea una cadena horizontal se añade el atributo `layout_constraintHorizontal_chainStyle`  
 en el primer widget, en nuestro ejemplo es el primer botón de la cadena.  
